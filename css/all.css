@@ -135,7 +135,7 @@ table {
 }
 
 /* css reset end */
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -157,7 +157,6 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 1.5;
-  font-style: italic;
   font-weight: 500;
 }
 
@@ -252,6 +251,10 @@ body{
   align-items: center;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .text-white{
   color: #fff;
 }
@@ -260,12 +263,21 @@ body{
   text-align: center;
 }
 
+.text-italic{
+  font-style: italic;
+}
+
 .border-top{
   border-top: 1px solid #000;
 }
 
 .bg-black{
   background: #000;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
@@ -299,7 +311,6 @@ h1{
 .socialList{
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .experienceList{
@@ -323,14 +334,6 @@ h1{
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 160px;
-}
-
-.brandList li:first-child{
-  width: 100%;
-}
-
-.brandList li:first-child img{
-  margin: 0 auto;
 }
 
 .workList{
